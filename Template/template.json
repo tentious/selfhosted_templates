@@ -2727,7 +2727,7 @@
     "devices": [
       {
         "container": "/dev/dri",
-        "bind": "/dev/dri"
+        "host": "/dev/dri"
       }
     ],
     "env": [
