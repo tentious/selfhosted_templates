@@ -2712,10 +2712,6 @@
     ],
     "volumes": [
       {
-        "container": "/dev/dri",
-        "bind": "/dev/dri"
-      },
-      {
         "container": "/config",
         "bind": "!config/Plex"
       },
@@ -2726,6 +2722,12 @@
       {
         "container": "/movies",
         "bind": "!movies"
+      }
+    ],
+    "devices": [
+      {
+        "container": "/dev/dri",
+        "bind": "/dev/dri"
       }
     ],
     "env": [
