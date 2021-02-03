@@ -2722,6 +2722,10 @@
       {
         "container": "/movies",
         "bind": "!movies"
+      },
+      {
+        "container": "/media",
+        "bind": "!media"
       }
     ],
     "devices": [
