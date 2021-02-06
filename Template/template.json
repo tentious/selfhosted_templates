@@ -2357,6 +2357,46 @@
   },
   {
     "type": 1,
+    "title": "Node-RED",
+    "name": "node-red",
+    "description": "Node-Red is Low-code programming for event-driven applications.",
+    "logo": "https://raw.githubusercontent.com/tentious/selfhosted_templates/yacht/Images/node-red.png",
+    "image": "nodered/node-red:latest",
+    "categories": [
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "1880:1880/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/data",
+        "bind": "!config/Node-Red"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      },
+      {
+        "name": "TZ",
+        "label": "Timezone"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "OScam",
     "name": "oscam",
     "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
