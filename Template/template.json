@@ -1955,6 +1955,51 @@
   },
   {
     "type": 1,
+    "title": "Mosquitto",
+    "name": "mosquitto",
+    "description": "Eclipse Mosquitto is an open source message broker which implements MQTT version 5, 3.1.1 and 3.1.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mosquitto-logo.png",
+    "image": "eclipse-mosquitto:lastest",
+    "categories": [
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "MQTT": "1883:1883/tcp",
+        "MQTT_WebSocket": "9001:9001/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/mosquitto/config",
+        "bind": "!config/Mosquitto"
+      },
+      {
+        "container": "/mosquitto/data",
+        "bind": "!data/Mosquitto"
+      },
+      {
+        "container": "/mosquitto/log",
+        "bind": "!logs/Mosquitto"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Mstream",
     "name": "mstream",
     "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
