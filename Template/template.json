@@ -1323,7 +1323,7 @@
   {
     "type": 1,
     "title": "Home Assistant",
-    "name": "home-assistant",
+    "name": "homeassistant",
     "description": "Open source home automation that puts local control and privacy first.",
     "note": "",
     "logo": "https://raw.githubusercontent.com/tentious/selfhosted_templates/yacht/Images/home-assistant-logo.png",
@@ -1350,11 +1350,6 @@
         "name": "PUID",
         "label": "PUID",
         "default": "!PUID"
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "!PGID"
       }
     ]
   },
