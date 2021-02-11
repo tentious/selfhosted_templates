@@ -1322,6 +1322,33 @@
   },
   {
     "type": 1,
+    "title": "Home Assistant",
+    "name": "home-assistant",
+    "description": "Open source home automation that puts local control and privacy first.",
+    "note": "",
+    "logo": "https://raw.githubusercontent.com/tentious/selfhosted_templates/yacht/Images/home-assistant-logo.png",
+    "image": "homeassistant/home-assistant",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "network_mode": "host",
+    "ports": [
+      {
+        "WebUI": "8123:8123/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "!config/Home-Assistant"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Homer",
     "name": "homer",
     "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
