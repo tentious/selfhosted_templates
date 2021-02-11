@@ -1340,7 +1340,7 @@
         "bind": "!config/Home-Assistant"
       },
       {
-        "container": "/etc/localtime:ro",
+        "container": "/etc/localtime",
         "bind": "!localtime"
       }
     ],
