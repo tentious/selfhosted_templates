@@ -1339,6 +1339,10 @@
       {
         "container": "/config",
         "bind": "!config/Home-Assistant"
+      },
+      {
+        "container": "/etc/localtime",
+        "bind": "!localtime"
       }
     ],
     "env": [
@@ -1351,10 +1355,6 @@
         "name": "PGID",
         "label": "PGID",
         "default": "!PGID"
-      },
-      {
-        "container": "/etc/localtime",
-        "bind": "!localtime"
       }
     ]
   },
