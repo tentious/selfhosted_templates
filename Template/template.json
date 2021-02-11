@@ -1353,9 +1353,9 @@
         "default": "!PGID"
       },
       {
-        "name": "TZ",
-        "label": "TZ"
-      }
+        "container": "/etc/localtime",
+        "bind": "!localtime"
+      },
     ]
   },
   {
