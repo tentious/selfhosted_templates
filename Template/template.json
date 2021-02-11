@@ -1335,11 +1335,6 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "network_mode": "host",
-    "ports": [
-      {
-        "WebUI": "8123:8123/tcp"
-      }
-    ],
     "volumes": [
       {
         "container": "/config",
