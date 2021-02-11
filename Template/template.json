@@ -1355,7 +1355,7 @@
       {
         "container": "/etc/localtime",
         "bind": "!localtime"
-      },
+      }
     ]
   },
   {
