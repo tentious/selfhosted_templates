@@ -1323,9 +1323,8 @@
   {
     "type": 1,
     "title": "Home Assistant",
-    "name": "homeassistant",
+    "name": "home-assistant",
     "description": "Open source home automation that puts local control and privacy first.",
-    "note": "",
     "logo": "https://raw.githubusercontent.com/tentious/selfhosted_templates/yacht/Images/home-assistant-logo.png",
     "image": "homeassistant/home-assistant",
     "categories": [
