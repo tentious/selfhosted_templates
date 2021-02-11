@@ -1349,6 +1349,11 @@
         "name": "PUID",
         "label": "PUID",
         "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
       }
     ]
   },
