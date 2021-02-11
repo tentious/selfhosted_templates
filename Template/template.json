@@ -1340,6 +1340,22 @@
         "container": "/config",
         "bind": "!config/Home-Assistant"
       }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
     ]
   },
   {
