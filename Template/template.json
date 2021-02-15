@@ -3958,6 +3958,12 @@
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
+    "volumes": [
+      {
+        "container": "/app/config",
+        "bind": "!config/WatchmonUDPListener"
+      }
+    ],
     "env": [
       {
         "name": "PUID",
