@@ -3948,6 +3948,31 @@
   },
   {
     "type": 1,
+    "title": "WatchmonUDPListener",
+    "name": "WatchmonUDPListener",
+    "description": "UDP Listener that listens for packets from Batrium Watchmon and sends the data to Influx and/or MQTT.",
+    "image": "daromer/watchmonudplistener:latest",
+    "network_mode": "host",
+    "categories": [
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Watchtower",
     "name": "watchtower",
     "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
