@@ -1165,10 +1165,6 @@
         "name": "PGID",
         "label": "PGID",
         "default": "!PGID"
-      },
-      {
-        "name": "TZ",
-        "label": "Timezone"
       }
     ]
   },
