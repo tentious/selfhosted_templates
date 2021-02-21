@@ -1144,6 +1144,7 @@
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
+    "user": "1000",
     "ports": [
       {
         "WebUI": "3001:3000/tcp"
