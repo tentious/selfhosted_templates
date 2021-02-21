@@ -1168,6 +1168,11 @@
         "default": "!PGID"
       },
       {
+        "name": "GF_SERVER_SERVE_FROM_SUB_PATH",
+        "label": "GF_SERVER_SERVE_FROM_SUB_PATH",
+        "default": "true"
+      },
+      {
         "name": "GF_SERVER_ROOT_URL",
         "label": "GF_SERVER_ROOT_URL",
         "default": "!GF_SERVER_ROOT_URL"
