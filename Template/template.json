@@ -1172,6 +1172,12 @@
         "label": "GF_SERVER_ROOT_URL",
         "default": "!GF_SERVER_ROOT_URL"
       }
+      ,
+      {
+        "name": "GF_SERVER_DOMAIN",
+        "label": "GF_SERVER_DOMAIN",
+        "default": "!GF_SERVER_DOMAIN"
+      }
     ]
   },
   {
