@@ -1165,6 +1165,11 @@
         "name": "PGID",
         "label": "PGID",
         "default": "!PGID"
+      },
+      {
+        "name": "GF_SERVER_ROOT_URL",
+        "label": "GF_SERVER_ROOT_URL",
+        "default": "!GF_SERVER_ROOT_URL"
       }
     ]
   },
