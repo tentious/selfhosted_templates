@@ -1144,6 +1144,7 @@
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
+    "user": "1000",
     "ports": [
       {
         "WebUI": "3001:3000/tcp"
@@ -1165,6 +1166,21 @@
         "name": "PGID",
         "label": "PGID",
         "default": "!PGID"
+      },
+      {
+        "name": "GF_SERVER_SERVE_FROM_SUB_PATH",
+        "label": "GF_SERVER_SERVE_FROM_SUB_PATH",
+        "default": "true"
+      },
+      {
+        "name": "GF_SERVER_ROOT_URL",
+        "label": "GF_SERVER_ROOT_URL",
+        "default": "!GF_SERVER_ROOT_URL"
+      },
+      {
+        "name": "GF_SERVER_DOMAIN",
+        "label": "GF_SERVER_DOMAIN",
+        "default": "!GF_SERVER_DOMAIN"
       }
     ]
   },
