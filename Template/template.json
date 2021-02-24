@@ -1206,7 +1206,8 @@
       },
       {
         "name": "TZ",
-        "label": "Timezone"
+        "label": "Timezone",
+        "default": "!TZ"
       }
     ]
   },
@@ -2338,6 +2339,11 @@
         "name": "PGID",
         "label": "PGID",
         "default": "!PGID"
+      },
+      {
+        "name": "TZ",
+        "label": "Timezone",
+        "default": "!TZ"
       }
     ]
   },
@@ -4303,6 +4309,11 @@
         "name": "PGID",
         "label": "PGID",
         "default": "!PGID"
+      },
+      {
+        "name": "TZ",
+        "label": "Timezone",
+        "default": "!TZ"
       }
     ]
   },
@@ -4346,7 +4357,8 @@
       },
       {
         "name": "TZ",
-        "label": "Timezone"
+        "label": "Timezone",
+        "default": "!TZ"
       }
     ]
   },
@@ -4417,7 +4429,8 @@
       },
       {
         "name": "TZ",
-        "label": "Timezone"
+        "label": "Timezone",
+        "default": "!TZ"
       },
       {
         "name": "EMAIL",
